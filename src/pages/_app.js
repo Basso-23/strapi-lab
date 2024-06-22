@@ -1,5 +1,15 @@
 import "@/styles/globals.css";
+import Head from "next/head";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
-}
+const App = ({ Component, pageProps }) => {
+  return (
+    <div>
+      <Head>
+        <title>Strapi-lab</title>
+      </Head>
+      <Component {...pageProps} />
+    </div>
+  );
+};
+
+export default App;
