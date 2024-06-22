@@ -22,3 +22,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.loader {
+  width: 25px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 3.5px solid #7c7c7d;
+  border-right-color: #3b3a3a;
+  animation: l2 1s infinite linear;
+}
+
+@keyframes l2 {
+  to {
+    transform: rotate(1turn);
+  }
+}
