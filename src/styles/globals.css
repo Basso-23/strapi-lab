@@ -23,6 +23,15 @@
   transform: translate(-50%, -50%);
 }
 
+@font-face {
+  font-family: inter;
+  src: url(../../public/Inter.ttf);
+}
+
+.inter {
+  font-family: inter;
+}
+
 .loader {
   width: 25px;
   aspect-ratio: 1;
@@ -35,5 +44,170 @@
 @keyframes l2 {
   to {
     transform: rotate(1turn);
+  }
+}
+
+input {
+  color: #dddddd;
+  outline: none;
+  padding-left: 5px;
+  margin-top: 0.25rem;
+  padding-top: 0.55rem;
+  padding-bottom: 0.55rem;
+  border: 1px solid #26272b;
+  background-color: #09080a;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/*Books ________________________________________________*/
+
+.title-container {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5rem; /* mt-10 */
+}
+
+.title {
+  line-height: 1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.new-btn {
+  background-color: #adfa1d;
+  color: #010001;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  line-height: 1;
+  border-radius: 2px;
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.books-container {
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.book-image {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  aspect-ratio: 9 / 14;
+  width: 200px;
+  border-radius: 4px;
+}
+
+.info-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+.autor {
+  font-size: 14px;
+  font-weight: 500;
+  color: #989898;
+}
+
+.edit-btn {
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.delete-btn {
+  width: 2rem;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+/*Create form ________________________________________________*/
+
+.create-container {
+  position: absolute;
+  top: 0;
+  height: 500px;
+  width: 100%;
+  background-color: #010001;
+  display: flex;
+}
+
+.create-form-container {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.create-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.añadir-btn {
+  color: black;
+  margin-top: 1.5rem;
+  background-color: #adfa1d;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 2px;
+  &:hover {
+    filter: brightness(0.8);
+  }
+}
+
+.cancelar-btn {
+  margin-top: 0.5rem;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding-top: 0.65rem;
+  padding-bottom: 0.65rem;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 2px;
+  &:hover {
+    filter: brightness(0.8);
   }
 }

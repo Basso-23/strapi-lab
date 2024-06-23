@@ -3,7 +3,7 @@ import Head from "next/head";
 
 const App = ({ Component, pageProps }) => {
   return (
-    <div>
+    <div className="inter">
       <Head>
         <title>Strapi-lab</title>
       </Head>
